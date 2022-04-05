@@ -1,0 +1,28 @@
+.customaer-container {
+    width: 360px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+.customer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.customer img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+
+.comments {
+    padding: 5px;
+}

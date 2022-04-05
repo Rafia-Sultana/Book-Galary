@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import UseReview from '../Hook/UseReview';
+import ReviewCard from '../ReviewCard/ReviewCard';
 import './Home.css';
 
 
@@ -20,11 +22,18 @@ const Home = () => {
             <hr></hr>
             <div className="">
                 <h2 className='review-title'>Customer Reviews</h2>
-                <div className="">
+                <div className="three-review">
                     {
+                        reviews.slice(0, 3).map(review => <ReviewCard
+                            key={review.id}
+                            review={review}
+
+
+                        ></ReviewCard>)
 
                     }
                 </div>
+                <Link to='/reviews' className='btn'>See All reviews</Link>
             </div>
 
 

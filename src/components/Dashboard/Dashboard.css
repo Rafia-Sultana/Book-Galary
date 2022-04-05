@@ -1,0 +1,6 @@
+.dash-container {
+    margin-top: 50px;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+}
